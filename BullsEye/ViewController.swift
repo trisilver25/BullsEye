@@ -25,29 +25,50 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        startNewRound() //Replace previous code with this
+        startNewGame() //Replace previous code with this
     }
     
     @IBAction func showAlert(){
         let difference = abs(targetValue - currentValue)
-        let points = 100 - difference
+        var points = 100 - difference
         
+        let title: String
+        if difference == 0 {
+            title = "Perfect!"
+            points += 100
+        } else if difference < 5 {
+            title = "You almost had it!"
+            if difference == 1 {
+                points += 50
+            }
+        } else if difference < 10 {
+            title = "Pretty good!"
+        } else {
+            title = "Not even close..."
+        }
         score += points
         
         let message = "You scored \(points) points"
         
         let alert = UIAlertController(
-            title: "Hello, World",
+            title: title,
             message: message,
             preferredStyle: .alert)
         
         let action = UIAlertAction(
             title: "OK",
             style: .default,
-            handler: nil)
+            handler: { _ in
+                self.startNewRound()
+            })
         
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
+    }
+    
+    @IBAction func startNewGame(){
+        score = 0
+        round = 0
         startNewRound()
     }
     
