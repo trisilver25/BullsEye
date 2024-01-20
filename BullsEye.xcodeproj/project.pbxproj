@@ -13,6 +13,8 @@
 		5A6452362B54AD18009754E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A6452342B54AD18009754E1 /* Main.storyboard */; };
 		5A6452382B54AD1A009754E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A6452372B54AD1A009754E1 /* Assets.xcassets */; };
 		5A64523B2B54AD1A009754E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A6452392B54AD1A009754E1 /* LaunchScreen.storyboard */; };
+		5ACA25432B5B5F3B0061DFA3 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACA25422B5B5F3B0061DFA3 /* AboutViewController.swift */; };
+		5ACA25452B5B68EA0061DFA3 /* BullsEye.html in Resources */ = {isa = PBXBuildFile; fileRef = 5ACA25442B5B68EA0061DFA3 /* BullsEye.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		5A6452372B54AD1A009754E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A64523A2B54AD1A009754E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A64523C2B54AD1A009754E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5ACA25422B5B5F3B0061DFA3 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		5ACA25442B5B68EA0061DFA3 /* BullsEye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BullsEye.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,7 @@
 		5A6452222B54AD17009754E1 = {
 			isa = PBXGroup;
 			children = (
+				5ACA25422B5B5F3B0061DFA3 /* AboutViewController.swift */,
 				5A64522D2B54AD18009754E1 /* BullsEye */,
 				5A64522C2B54AD18009754E1 /* Products */,
 			);
@@ -56,6 +61,7 @@
 		5A64522D2B54AD18009754E1 /* BullsEye */ = {
 			isa = PBXGroup;
 			children = (
+				5ACA25442B5B68EA0061DFA3 /* BullsEye.html */,
 				5A64522E2B54AD18009754E1 /* AppDelegate.swift */,
 				5A6452302B54AD18009754E1 /* SceneDelegate.swift */,
 				5A6452322B54AD18009754E1 /* ViewController.swift */,
@@ -126,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A64523B2B54AD1A009754E1 /* LaunchScreen.storyboard in Resources */,
+				5ACA25452B5B68EA0061DFA3 /* BullsEye.html in Resources */,
 				5A6452382B54AD1A009754E1 /* Assets.xcassets in Resources */,
 				5A6452362B54AD18009754E1 /* Main.storyboard in Resources */,
 			);
@@ -140,6 +147,7 @@
 			files = (
 				5A6452332B54AD18009754E1 /* ViewController.swift in Sources */,
 				5A64522F2B54AD18009754E1 /* AppDelegate.swift in Sources */,
+				5ACA25432B5B5F3B0061DFA3 /* AboutViewController.swift in Sources */,
 				5A6452312B54AD18009754E1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,6 +305,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -323,6 +333,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
